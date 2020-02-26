@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wbd_proj2.WidokEdycjiBiletuController">
+   <children>
+      <Label maxWidth="1.7976931348623157E308" text="Dane biletu" textAlignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <VBox.margin>
+            <Insets right="20.0" />
+         </VBox.margin>
+      </Label>
+      <Label maxWidth="1.7976931348623157E308" text="Id biletu" />
+      <TextField fx:id="poleIdBiletu" disable="true" editable="false" maxWidth="1.7976931348623157E308" />
+      <Label maxWidth="1.7976931348623157E308" text="Cena" />
+      <TextField fx:id="poleCenaBiletu" disable="true" maxWidth="1.7976931348623157E308" />
+      <Label maxWidth="1.7976931348623157E308" text="Typ biletu" />
+      <ChoiceBox fx:id="poleTypBiletu" disable="true" maxWidth="1.7976931348623157E308" />
+      <Label maxWidth="1.7976931348623157E308" text="Data zakupu" />
+      <TextField fx:id="poleDataZakupuBiletu" disable="true" maxWidth="1.7976931348623157E308" />
+      <Label maxWidth="1.7976931348623157E308" text="Data ważności" />
+      <TextField fx:id="poleDataWaznosciBiletu" disable="true" maxWidth="1.7976931348623157E308" />
+      <HBox alignment="CENTER_RIGHT">
+         <children>
+            <Button fx:id="przyciskEdytujBilet1" mnemonicParsing="false" onAction="#onClickZapiszBilet" text="Zapisz" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

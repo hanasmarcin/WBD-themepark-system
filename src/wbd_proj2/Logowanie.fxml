@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wbd_proj2.LogowanieController">
+   <children>
+      <Label text="System parku">
+         <VBox.margin>
+            <Insets right="30.0" />
+         </VBox.margin>
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label text="Identyfikator" />
+      <TextField fx:id="poleIdLogowanie" maxWidth="1.7976931348623157E308" />
+      <Label text="Nazwisko" />
+      <PasswordField fx:id="poleNazwiskoLogowanie" styleClass="password-field" />
+      <Label text="Widok" />
+      <ChoiceBox fx:id="poleWidokLogowanie" maxWidth="1.7976931348623157E308" />
+      <HBox alignment="CENTER_RIGHT">
+         <children>
+            <Button fx:id="przyciskZaloguj" mnemonicParsing="false" onAction="#onClickZaloguj" text="Zaloguj" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
